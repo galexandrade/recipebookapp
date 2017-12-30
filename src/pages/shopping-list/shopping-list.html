@@ -33,4 +33,9 @@
             block
             [disabled]="!f.valid">Add</button>
   </form>
+  <ion-list>
+    <ion-item *ngFor="let item of listItems; let idx = index;" (click)="onCheckItem(idx)">
+      <h3>{{item.name}} ({{item.amount}})</h3>
+    </ion-item>
+  </ion-list>
 </ion-content>
