@@ -1,11 +1,26 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Recipe</ion-title>
+    <ion-title>{{recipe.title}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h2>{{ recipe.title }}</h2>
+        <div>
+          {{recipe.difficulty}}
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <p>{{recipe.description}}</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
