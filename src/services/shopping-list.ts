@@ -38,7 +38,7 @@ export class ShoppingListService{
 
     loadList(token: string){
         const userId = this.authService.getActiveUser().uid;
-        return this.http.get('https://ionic-recipe-book-1e1fa.firebaseio.com/' + userId + '/shopping-list.json?auth=' + token, this.ingredients)
+        return this.http.get('https://ionic-recipe-book-1e1fa.firebaseio.com/' + userId + '/shopping-list.json?auth=' + token)
             .map((response: Response) => {
                 return response.json();
             })

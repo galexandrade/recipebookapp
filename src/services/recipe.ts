@@ -48,7 +48,7 @@ export class RecipeService{
 
     loadRecipes(token: string){
         const userId = this.authService.getActiveUser().uid;
-        return this.http.get('https://ionic-recipe-book-1e1fa.firebaseio.com/' + userId + '/recipes.json?auth=' + token, this.recipes)
+        return this.http.get('https://ionic-recipe-book-1e1fa.firebaseio.com/' + userId + '/recipes.json?auth=' + token)
             .map((response: Response) => {
                 const recipes: Recipe[] = response.json() ? response.json() : [];
                 recipes.map(recipe => {

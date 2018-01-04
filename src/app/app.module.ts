@@ -17,7 +17,6 @@ import { SignupPage } from '../pages/signup/signup';
 import { AuthService } from '../services/auth';
 import { DatabaseOptions } from '../pages/database-options/database-options';
 import { HttpModule } from '@angular/http';
-import { RecipesOptions } from '../pages/recipes/recipes-options/recipes-options';
 
 @NgModule({
   declarations: [
